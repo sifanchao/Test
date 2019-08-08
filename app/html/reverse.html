@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 反转</title>
+</head>
+<body>
+    <div id="reverse_string">
+        <p>{{ message[0].toUpperCase()+message.slice(1) }}</p>
+        <button v-on:click="reverseMessage">反转字符串</button>
+    </div>
+</body>
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#reverse_string',
+            data:{
+                message:"i Love You 张悦❤"
+            },
+            methods:{
+                reverseMessage: function(){
+                    this.message = this.message.split('').reverse().join('');
+                }
+            },
+        })
+    </script>
+</html>
+

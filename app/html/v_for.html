@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例</title>
+</head>
+    <style>
+        .class1{
+            background: rebeccapurple;
+            color: greenyellow;
+        }
+    </style>
+<body>
+    <div id='vue_for'>
+        <select v-model="selected">
+            <option v-for="option in options" v-bind:value="option.value">
+                {{option.text}}
+            </option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+    </div>
+<!-- 
+    <div id = "app">
+        <input type="checkbox" v-model= "use" id="r1">
+        <label for="r1">修改颜色</label><br>
+        <div v-bind:class="{'class1':use}">
+            v-bind:class  指令
+        </div>
+    </div> -->
+</body>
+    <script src="../js/vue.js"></script>
+    <script text="text/javascript" src="../js/v_for.js"></script>
+</html>

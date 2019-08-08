@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/../css/common.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <style>
+        table.table-striped{
+            width: 80%;
+            margin: 10px auto;
+        }
+        .pagination{
+            font-size: 20px;
+            width: 30%;
+            margin-left: 850px;
+        }
+        .swiper-container {
+            width: 300px;
+            height: 180px;
+        } 
+        .swiper-wrapper img{
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 20px auto;
+        }           
+    </style>
+</head>
+<body>
+    <main>
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">Slide 1</div> -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- 表格 -->
+        <table class="table table-striped">
+            <tr>
+                <th>编号</th>
+                <th>奖品</th>
+                <th>图片</th>
+                <th>中奖用户</th>
+                <th>中奖时间</th>
+            </tr>
+        </table>
+    </main>
+    <!-- 页码 -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination"></ul>
+    </nav>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script type="text/javascript" src= "../js/index.js"></script>
+</body>
+</html>

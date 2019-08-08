@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../img/XL_OS.jpg") no-repeat;/*不重复*/
+    width: 100%;
+    height: 80vh;
+}     
+#main{
+    width: 406px;
+    height: 550px;
+    margin: 100px 50px 15px 1100px;/*针对整个页面的↑→↓←*/
+    background-color: white;
+    padding: 15px; /*内边距*/
+    position: relative;
+}
+ul{
+    display: flex;  
+    justify-content: space-between;
+    width: 250px;
+    margin: 30px auto;
+}  
+ul li{
+    list-style: none;
+    font-size: 20px;
+}  
+ul li:nth-of-type(1){
+    padding-right: 40px;
+    color: #0F97ff;
+    border-right: 2px solid #e0e0e0;/*右边边框  solid：实线*/
+}
+.user_input{
+    width: 346px;
+    height: 50px;
+    padding: 0 10px;
+    margin-bottom: 15px;/*下边距*/
+    margin-left: 12px;
+    border: 1px solid #e0e0e0;
+}
+.code{
+    display: flex;
+    justify-content: space-between;
+    width: 358px;
+}
+.code input{
+    width: 247px;
+}
+.code a{
+    width: 100px;
+    margin: 0;
+    border: 1px solid #e0e0e0;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+}
+form:nth-of-type(2){
+    display: none;
+}
+.box{
+    margin-left: 10px;
+}
+span{
+    color: #666666;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;/*下划线*/
+    color: #0F97ff;
+    font-size: 14px;
+    margin-left: 170px;
+}
+.btn{
+    background-color: #0F97ff;
+    color: #fff;
+    border: none;
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 16px;
+}
+.registered{
+    margin-left: 280px;
+}
+
+
+/*----------------弹窗--------------------*/
+/*模态框*/
+.modal {
+    display: none;  /* 默认隐藏  */
+    position: fixed; /* 根据浏览器定位 */
+    z-index: 1; /* 放在顶部 */
+    left: 40%;
+    top: 30%;
+    width: 500px;
+    height: 150px; 
+    overflow: auto; /* 允许滚动 */
+    background-color : white; 
+}
+@keyframes topDown {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+/*关闭X 样式*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal p{
+    text-align: center;
+    line-height: 120px;
+}
+.modal span{
+    float: right;
+    font-size: 20px;
+}
+.bgColor{
+    display: none;
+    opacity: .6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #666666;
+}
+#errorBox{
+    position: absolute;
+    left: 31px;
+    top: 77px;
+    color: red;
+    font-size: 14px;
+}

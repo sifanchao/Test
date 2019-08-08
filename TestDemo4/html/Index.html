@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+</head>
+<body>
+    <main>
+        <div class="modal">
+            <span class="closeBtn">x</span>
+            <p id="aaa"></p>
+        </div>
+        <div id="main">
+            <ul id="login">
+                <li>账号登录</li>
+                <li>短信登录</li>
+            </ul>
+            <p id ="errorBox"></p>
+            <form class="from1" action="https://login.xunlei.com/xluser.core.login/v3/login" 
+                    name="Account_login" method="POST" enctype="multipart/form-data">
+                <input class="user_input" type="text" placeholder="请输入用户账户"><br>
+                <input class="user_input" type="password" placeholder="密码">
+                <input type="hidden" name="appName" value="22003">
+                <input type="hidden" name="deviceModel" value="WEB-i.xunlei.com">
+                <input type="hidden" name="deviceName" value="chrome/72.0.3626.119">
+                <input type="hidden" name="OSVersion" value="Win32">
+                <input type="hidden" name="provideName" value="NONE">
+                <input type="hidden" name="netWorkType" value="NONE">
+                <input type="hidden" name="providerName" value="NONE">
+                <input type="hidden" name="sdkVersion" value="v3.6.0">
+                <input type="hidden" name="clientVersion" value="1.1.1">
+                <input type="hidden" name="protocolVersion" value="301">
+                <input type="hidden" name="devicesign" value="wdi10.2f5e78652a4e3c44aa639bc7c499ab03b3e144b77fb99fda2a2402a42101afca">
+                <input type="hidden" name="platformVersion" value="1">
+                <input type="hidden" name="fromPlatformVersion" value="1">
+                <input type="hidden" name="format" value="cookie">
+                <input type="hidden" name="timestamp" value="1551167347532">
+                <input type="hidden" name="isMd5Pwd" value="0">
+                <input type="hidden" name="creditkey" value="ck0.7Y9B2ibflcrJelQvW2sihfD1TlmAdbXUFpjKy966484FEhTnFFF_NVXr9xOAEI64TcvdvlDDmwLY_30z5ra8AQ">
+                <input type="checkbox" class="box">
+                <span>下次自动登录</span>
+                <a href="https://i.xunlei.com/xluser/validate/findpwd_acc.html">忘记密码?</a><br>
+                <input class="btn" type="submit" value="登录"><br>
+                <a href="https://i.xunlei.com/xluser/validate/findpwd_acc.html" class="registered">注册账号</a><br>
+            </form>
+            <form class="form2" action="https://login.xunlei.com/xluser.core.login/v3/login"
+                    name="Text_login" method="POST" enctype="multipart/form-data">
+                <input class="user_input" type="text" placeholder="请输入手机号">
+            <div class="code">
+                <input class="user_input" type="text" placeholder="请输入短信验证码">
+                <a href="#">获取验证码</a>
+            </div>
+            <input type="checkbox" class="box">
+            <span>下次自动登录</span>
+            <a href="https://i.xunlei.com/xluser/validate/findpwd_acc.html">忘记密码?</a><br>
+            <input class="btn" type="submit" value="登录"><br>
+            <a href="https://i.xunlei.com/xluser/validate/findpwd_acc.html" class="registered">注册账号</a><br>
+            </form>
+            <div class= "bg"></div>
+        </div>
+    </main>
+</body>
+    <script type="text/javascript" src="../js/index.js"></script>
+</html>
